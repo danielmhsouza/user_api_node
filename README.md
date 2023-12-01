@@ -5,14 +5,15 @@
 <h3>**GET**</h3>
 
 ```
-http://localhost:300/user/?id=?
+http://localhost:3000/user/?id=?
 ```
 <p>Na ausencia do parâmetro id, todos os usuários serão retornados.</p> 
 
+<hr>
 <h3>**POST** (adiciona usuário)</h3>
 
 ```
-http://localhost:300/user/
+http://localhost:3000/user/
 ```
 <p>
 
@@ -26,10 +27,11 @@ headers: {
 </p>
 <p>Espera-se o retorno do usuário adicionado.</p>
 
+<hr>
 <h3>**PATCH**</h3>
 
 ```
-http://localhost:300/user/:id
+http://localhost:3000/user/:id
 ```
 <p>
 
@@ -44,11 +46,11 @@ headers: {
 </p>
 <p>O corpo da mensagem não precisa conter todas as chaves do usuário, apenas a que deseja modificar e o valor. Chaves que não existem no usuário serão desconsideradas.</p>
 
+<hr>
 <h3>**DELETE**</h3>
 
 ```
-http://localhost:300/user/:id
-
+http://localhost:3000/user/:id
 ```
 
 <p>Espera-se que retorne todos os usuários, exceto o usuario com o id correspondente.</p>
